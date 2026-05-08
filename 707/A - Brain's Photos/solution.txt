@@ -1,0 +1,14 @@
+n, m = map(int, input().split())
+colored = False
+ans = "#Black&White"
+for i in range(n):
+    pixel = input().split() 
+    for j in range(m):
+        if pixel[j] == "C" or pixel[j] == "M" or pixel[j] == "Y":
+            ans = "#Color"
+            colored = True
+            break 
+    if colored : 
+        break
+print(ans) 
+           
